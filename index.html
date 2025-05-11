@@ -19,6 +19,7 @@
     <div class="page-wrapper">
       <!------- Header / Branding ------->
       <header class="site-header">
+        <!-- Ensure the image path is correct -->
         <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
         <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
       </header>
@@ -46,6 +47,7 @@
       <div class="selected-products">
         <h2>Selected Products</h2>
         <div id="selectedProductsList"></div>
+        <button id="clearSelections" class="clear-btn">Clear All</button>
         <button id="generateRoutine" class="generate-btn">
           <i class="fa-solid fa-wand-magic-sparkles"></i> Generate Routine
         </button>
@@ -86,7 +88,7 @@
     </div>
 
     <!-- secrets.js can be removed when using Cloudflare Workers for API requests -->
-    <script src="secrets.js"></script>
+    
     <script src="script.js"></script>
   </body>
 </html>
